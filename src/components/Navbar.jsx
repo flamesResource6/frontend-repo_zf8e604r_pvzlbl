@@ -8,8 +8,11 @@ const labels = {
     media: 'Media',
     komunitas: 'Komunitas',
     store: 'Store',
+    testimoni: 'Testimoni',
+    kolaborasi: 'Kolaborasi',
     kontak: 'Kontak',
-    tagline: 'Guru & Pelatih Al-Qur\'an Profesional',
+    tagline: 'Trainer Soulful Qur’an',
+    brand: 'Bilal Qori',
     lang: 'ID',
     langFull: 'Bahasa Indonesia',
   },
@@ -19,8 +22,11 @@ const labels = {
     media: 'Media',
     komunitas: 'Community',
     store: 'Store',
+    testimoni: 'Testimonials',
+    kolaborasi: 'Collaboration',
     kontak: 'Contact',
-    tagline: 'Professional Qur\'an Teacher & Trainer',
+    tagline: 'Soulful Qur’an Trainer',
+    brand: 'Bilal Qori',
     lang: 'EN',
     langFull: 'English',
   }
@@ -48,10 +54,10 @@ export default function Navbar({ lang, setLang }) {
       <nav className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between">
           <a href="#profil" className="flex items-center gap-3">
-            <div className="h-9 w-9 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white grid place-items-center font-bold">Q</div>
+            <div className="h-9 w-9 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white grid place-items-center font-bold">BQ</div>
             <div>
               <p className="text-sm text-gray-500 leading-none">{t.tagline}</p>
-              <p className="font-semibold text-gray-900 leading-tight">Quran Coach</p>
+              <p className="font-semibold text-gray-900 leading-tight">{t.brand}</p>
             </div>
           </a>
 
@@ -61,6 +67,8 @@ export default function Navbar({ lang, setLang }) {
             <MenuLink href="#media">{t.media}</MenuLink>
             <MenuLink href="#komunitas">{t.komunitas}</MenuLink>
             <MenuLink href="#store">{t.store}</MenuLink>
+            <MenuLink href="#testimoni">{t.testimoni}</MenuLink>
+            <MenuLink href="#kolaborasi">{t.kolaborasi}</MenuLink>
             <MenuLink href="#kontak">{t.kontak}</MenuLink>
           </div>
 
@@ -90,6 +98,8 @@ export default function Navbar({ lang, setLang }) {
               <a onClick={() => setOpen(false)} href="#media" className="px-4 py-3 text-gray-700 hover:bg-blue-50">{t.media}</a>
               <a onClick={() => setOpen(false)} href="#komunitas" className="px-4 py-3 text-gray-700 hover:bg-blue-50">{t.komunitas}</a>
               <a onClick={() => setOpen(false)} href="#store" className="px-4 py-3 text-gray-700 hover:bg-blue-50">{t.store}</a>
+              <a onClick={() => setOpen(false)} href="#testimoni" className="px-4 py-3 text-gray-700 hover:bg-blue-50">{t.testimoni}</a>
+              <a onClick={() => setOpen(false)} href="#kolaborasi" className="px-4 py-3 text-gray-700 hover:bg-blue-50">{t.kolaborasi}</a>
               <a onClick={() => setOpen(false)} href="#kontak" className="px-4 py-3 text-gray-700 hover:bg-blue-50">{t.kontak}</a>
             </div>
           </div>
