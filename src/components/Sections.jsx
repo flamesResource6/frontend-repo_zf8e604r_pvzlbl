@@ -193,17 +193,17 @@ export default function Sections({ lang }) {
       {/* Hero */}
       <section className="grid lg:grid-cols-2 gap-10 items-center py-10 sm:py-16">
         <div className="space-y-5">
-          <p className="inline-flex items-center rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700 w-fit">Soulful Qur’an</p>
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900">{t.hero.title}</h1>
-          <p className="text-lg text-gray-700">{t.hero.subtitle}</p>
-          <blockquote className="text-gray-600 italic border-l-4 border-blue-200 pl-4">{t.hero.quote}</blockquote>
+          <p className="inline-flex items-center rounded-full border border-brand-muted/30 bg-brand-accent/30 px-3 py-1 text-xs font-medium text-brand w-fit">Soulful Qur’an</p>
+          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-brand">{t.hero.title}</h1>
+          <p className="text-lg text-brand">{t.hero.subtitle}</p>
+          <blockquote className="text-brand italic border-l-4 border-brand-muted pl-4">{t.hero.quote}</blockquote>
           <div className="flex gap-3 pt-2">
-            <a href="#kontak" className="inline-flex items-center justify-center rounded-md bg-blue-600 px-5 py-2.5 text-white shadow hover:bg-blue-500">{t.hero.ctas[0]}</a>
-            <a href="#program" className="inline-flex items-center justify-center rounded-md border border-gray-200 bg-white px-5 py-2.5 text-gray-700 hover:bg-gray-50">{t.hero.ctas[1]}</a>
+            <a href="#kontak" className="inline-flex items-center justify-center rounded-md bg-brand px-5 py-2.5 text-white shadow hover:bg-[#7b552a]">{t.hero.ctas[0]}</a>
+            <a href="#program" className="inline-flex items-center justify-center rounded-md border border-brand-muted/40 bg-brand-bg px-5 py-2.5 text-brand hover:bg-brand-accent/20">{t.hero.ctas[1]}</a>
           </div>
         </div>
         <div className="relative">
-          <div className="aspect-video rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-gray-100 shadow-inner grid place-items-center text-gray-500">
+          <div className="aspect-video rounded-xl bg-gradient-to-br from-brand-bg to-brand-accent/60 border border-brand-muted/40 shadow-inner grid place-items-center text-brand">
             <span>Hero Image / Video</span>
           </div>
         </div>
@@ -211,37 +211,37 @@ export default function Sections({ lang }) {
 
       {/* Profil */}
       <section id="profil" className="py-10 sm:py-16">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">{t.profil.title}</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-brand mb-6">{t.profil.title}</h2>
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="space-y-4">
-            <h3 className="font-semibold text-gray-900">{t.profil.tentangTitle}</h3>
-            <p className="text-gray-700 leading-relaxed">{t.profil.tentangBody}</p>
+            <h3 className="font-semibold text-brand">{t.profil.tentangTitle}</h3>
+            <p className="text-brand leading-relaxed/7">{t.profil.tentangBody}</p>
           </div>
           <div className="space-y-4">
-            <h3 className="font-semibold text-gray-900">{t.profil.visiTitle}</h3>
-            <p className="text-gray-700 leading-relaxed">{t.profil.visiBody}</p>
+            <h3 className="font-semibold text-brand">{t.profil.visiTitle}</h3>
+            <p className="text-brand leading-relaxed/7">{t.profil.visiBody}</p>
           </div>
         </div>
       </section>
 
       {/* Soulful Qur'an */}
       <section className="py-10 sm:py-16">
-        <div className="rounded-2xl border border-gray-100 bg-white p-6 sm:p-8 shadow-sm">
+        <div className="rounded-2xl border border-brand-muted/40 bg-brand-bg p-6 sm:p-8 shadow-sm">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-10">
             <div className="flex-1">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{t.soulful.title}</h2>
-              <h3 className="font-semibold text-gray-900">{t.soulful.apaItuTitle}</h3>
-              <p className="text-gray-700 mb-4">{t.soulful.apaItuBody}</p>
-              <h4 className="font-semibold text-gray-900">{t.soulful.manfaatTitle}</h4>
-              <ul className="list-disc pl-5 text-gray-700 space-y-1 mb-4">
+              <h2 className="text-2xl sm:text-3xl font-bold text-brand mb-2">{t.soulful.title}</h2>
+              <h3 className="font-semibold text-brand">{t.soulful.apaItuTitle}</h3>
+              <p className="text-brand mb-4">{t.soulful.apaItuBody}</p>
+              <h4 className="font-semibold text-brand">{t.soulful.manfaatTitle}</h4>
+              <ul className="list-disc pl-5 text-brand space-y-1 mb-4">
                 {t.soulful.manfaat.map((m, i) => (
                   <li key={i}>{m}</li>
                 ))}
               </ul>
-              <blockquote className="text-gray-700 italic border-l-4 border-blue-200 pl-4">{t.soulful.testimoni}</blockquote>
+              <blockquote className="text-brand italic border-l-4 border-brand-muted pl-4">{t.soulful.testimoni}</blockquote>
             </div>
             <div className="w-full lg:w-[40%]">
-              <div className="aspect-video rounded-xl bg-gray-100 grid place-items-center text-gray-500">Video/Poster</div>
+              <div className="aspect-video rounded-xl bg-brand-accent/40 grid place-items-center text-brand">Video/Poster</div>
             </div>
           </div>
         </div>
@@ -249,69 +249,69 @@ export default function Sections({ lang }) {
 
       {/* Program */}
       <section id="program" className="py-10 sm:py-16">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">{t.program.title}</h2>
-        <p className="text-gray-700 mb-6">{t.program.jenisTitle}</p>
+        <h2 className="text-2xl sm:text-3xl font-bold text-brand mb-4">{t.program.title}</h2>
+        <p className="text-brand mb-6">{t.program.jenisTitle}</p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {t.program.jenis.map((p, i) => (
-            <div key={i} className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm hover:shadow transition">
-              <h3 className="font-semibold text-gray-900">{p}</h3>
+            <div key={i} className="rounded-xl border border-brand-muted/40 bg-brand-bg p-5 shadow-sm hover:shadow transition">
+              <h3 className="font-semibold text-brand">{p}</h3>
             </div>
           ))}
         </div>
-        <div className="mt-6 rounded-xl border border-gray-100 bg-white p-5 text-gray-700">{t.program.pageInfo}</div>
+        <div className="mt-6 rounded-xl border border-brand-muted/40 bg-brand-bg p-5 text-brand">{t.program.pageInfo}</div>
       </section>
 
       {/* Media */}
       <section id="media" className="py-10 sm:py-16">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{t.media.title}</h2>
-        <p className="text-gray-700 mb-4">{t.media.subtitle}</p>
+        <h2 className="text-2xl sm:text-3xl font-bold text-brand mb-2">{t.media.title}</h2>
+        <p className="text-brand mb-4">{t.media.subtitle}</p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {t.media.items.map((m, i) => (
-            <div key={i} className="rounded-xl border border-gray-100 bg-white p-5 text-gray-700">{m}</div>
+            <div key={i} className="rounded-xl border border-brand-muted/40 bg-brand-bg p-5 text-brand">{m}</div>
           ))}
         </div>
-        <div className="mt-6 flex flex-wrap gap-3 text-blue-600">
+        <div className="mt-6 flex flex-wrap gap-3 text-brand">
           {t.media.socials.map((s, i) => (
-            <a key={i} href="#" className="underline decoration-blue-200 underline-offset-4 hover:text-blue-700">{s}</a>
+            <a key={i} href="#" className="underline decoration-brand-muted underline-offset-4 hover:text-[#7b552a]">{s}</a>
           ))}
         </div>
       </section>
 
       {/* Komunitas */}
       <section id="komunitas" className="py-10 sm:py-16">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{t.komunitas.title}</h2>
-        <p className="text-gray-700 mb-6">{t.komunitas.subtitle}</p>
-        <div className="rounded-xl border border-gray-100 p-6 bg-white flex items-center justify-between">
-          <p className="text-gray-700">{t.komunitas.galeri}</p>
-          <a href="#kontak" className="inline-flex items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">Gabung</a>
+        <h2 className="text-2xl sm:text-3xl font-bold text-brand mb-2">{t.komunitas.title}</h2>
+        <p className="text-brand mb-6">{t.komunitas.subtitle}</p>
+        <div className="rounded-xl border border-brand-muted/40 p-6 bg-brand-bg flex items-center justify-between">
+          <p className="text-brand">{t.komunitas.galeri}</p>
+          <a href="#kontak" className="inline-flex items-center justify-center rounded-md bg-brand px-4 py-2 text-white hover:bg-[#7b552a]">Gabung</a>
         </div>
       </section>
 
       {/* Store */}
       <section id="store" className="py-10 sm:py-16">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{t.store.title}</h2>
-        <p className="text-gray-700 mb-2">{t.store.subtitle}</p>
-        <h3 className="font-semibold text-gray-900 mb-2">{t.store.productsTitle}</h3>
+        <h2 className="text-2xl sm:text-3xl font-bold text-brand mb-2">{t.store.title}</h2>
+        <p className="text-brand mb-2">{t.store.subtitle}</p>
+        <h3 className="font-semibold text-brand mb-2">{t.store.productsTitle}</h3>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {t.store.products.map((p, i) => (
-            <div key={i} className="rounded-xl border border-gray-100 bg-white p-5">
-              <div className="aspect-[4/3] rounded-lg bg-gray-100 mb-3" />
-              <h4 className="font-semibold text-gray-900">{p}</h4>
-              <p className="text-sm text-gray-600 mb-3">Produk terkait {p.toLowerCase()}.</p>
+            <div key={i} className="rounded-xl border border-brand-muted/40 bg-brand-bg p-5">
+              <div className="aspect-[4/3] rounded-lg bg-brand-accent/40 mb-3" />
+              <h4 className="font-semibold text-brand">{p}</h4>
+              <p className="text-sm text-brand mb-3">Produk terkait {p.toLowerCase()}.</p>
               <div className="flex items-center justify-between">
-                <span className="font-semibold">Mulai Rp99K</span>
-                <a href="#kontak" className="inline-flex items-center justify-center rounded-md bg-blue-600 px-3 py-1.5 text-white hover:bg-blue-500 text-sm">Beli</a>
+                <span className="font-semibold text-brand">Mulai Rp99K</span>
+                <a href="#kontak" className="inline-flex items-center justify-center rounded-md bg-brand px-3 py-1.5 text-white hover:bg-[#7b552a] text-sm">Beli</a>
               </div>
             </div>
           ))}
         </div>
-        <div className="mt-6 rounded-xl border border-gray-100 bg-white p-5 text-gray-700">{t.store.fitur}</div>
+        <div className="mt-6 rounded-xl border border-brand-muted/40 bg-brand-bg p-5 text-brand">{t.store.fitur}</div>
       </section>
 
       {/* Testimoni & Prestasi */}
       <section id="testimoni" className="py-10 sm:py-16">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{t.testimoni.title}</h2>
-        <ul className="list-disc pl-5 text-gray-700 space-y-1">
+        <h2 className="text-2xl sm:text-3xl font-bold text-brand mb-2">{t.testimoni.title}</h2>
+        <ul className="list-disc pl-5 text-brand space-y-1">
           {t.testimoni.items.map((it, i) => (
             <li key={i}>{it}</li>
           ))}
@@ -320,24 +320,24 @@ export default function Sections({ lang }) {
 
       {/* Kolaborasi */}
       <section id="kolaborasi" className="py-10 sm:py-16">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{t.kolaborasi.title}</h2>
-        <p className="text-gray-700">{t.kolaborasi.body}</p>
+        <h2 className="text-2xl sm:text-3xl font-bold text-brand mb-2">{t.kolaborasi.title}</h2>
+        <p className="text-brand">{t.kolaborasi.body}</p>
       </section>
 
       {/* Kontak */}
       <section id="kontak" className="py-10 sm:py-16">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{t.kontak.title}</h2>
-        <p className="text-gray-600 mb-6">{t.kontak.subtitle}</p>
+        <h2 className="text-2xl sm:text-3xl font-bold text-brand mb-2">{t.kontak.title}</h2>
+        <p className="text-brand mb-6">{t.kontak.subtitle}</p>
         <form onSubmit={(e)=>e.preventDefault()} className="grid sm:grid-cols-2 gap-4">
-          <input className="w-full rounded-md border border-gray-200 p-3" placeholder={t.kontak.form.name} />
-          <input type="email" className="w-full rounded-md border border-gray-200 p-3" placeholder={t.kontak.form.email} />
-          <input className="w-full rounded-md border border-gray-200 p-3 sm:col-span-2" placeholder={t.kontak.form.subject} />
-          <textarea rows="4" className="w-full rounded-md border border-gray-200 p-3 sm:col-span-2" placeholder={t.kontak.form.message} />
-          <button className="inline-flex w-fit items-center justify-center rounded-md bg-blue-600 px-5 py-2.5 text-white hover:bg-blue-500">{t.kontak.form.send}</button>
+          <input className="w-full rounded-md border border-brand-muted/40 bg-brand-bg p-3 text-brand placeholder:text-brand/60" placeholder={t.kontak.form.name} />
+          <input type="email" className="w-full rounded-md border border-brand-muted/40 bg-brand-bg p-3 text-brand placeholder:text-brand/60" placeholder={t.kontak.form.email} />
+          <input className="w-full rounded-md border border-brand-muted/40 bg-brand-bg p-3 text-brand placeholder:text-brand/60 sm:col-span-2" placeholder={t.kontak.form.subject} />
+          <textarea rows="4" className="w-full rounded-md border border-brand-muted/40 bg-brand-bg p-3 text-brand placeholder:text-brand/60 sm:col-span-2" placeholder={t.kontak.form.message} />
+          <button className="inline-flex w-fit items-center justify-center rounded-md bg-brand px-5 py-2.5 text-white hover:bg-[#7b552a]">{t.kontak.form.send}</button>
         </form>
       </section>
 
-      <footer className="py-10 text-center text-sm text-gray-500">
+      <footer className="py-10 text-center text-sm text-brand">
         © {new Date().getFullYear()} {lang === 'id' ? 'Bilal Qori' : 'Bilal Qori'}. All rights reserved.
       </footer>
     </main>
